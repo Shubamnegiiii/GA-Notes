@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science</title>
+<style>
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:#e9e9ec; font-family:system-ui,sans-serif; color:#1f2937; }
+  nav { position:sticky; top:0; z-index:10; display:flex; justify-content:center; flex-wrap:wrap; gap:8px; padding:8px; background:#1f2937; }
+  nav a { color:#fff; text-decoration:none; font-size:14px; padding:6px 14px; border-radius:999px; background:#374151; }
+  nav a:hover { background:#4b5563; }
+  .front { max-width:1000px; margin:0 auto; padding:28px 14px 8px; scroll-margin-top:56px; }
+  .front h1 { margin:0; text-align:center; font-size:38px; color:#1f2937; letter-spacing:.5px; }
+  .front .sub { text-align:center; margin:6px 0 22px; color:#4b5563; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+  .card { background:#fff; border-radius:12px; padding:16px 18px; box-shadow:0 2px 10px rgba(0,0,0,.15); border-top:5px solid #1f2937; }
+  .card h2 { margin:0 0 4px; font-size:20px; }
+  .card h2 a { text-decoration:none; }
+  .tot { font-size:14px; color:#4b5563; margin-bottom:10px; }
+  .card ol { list-style:none; margin:0; padding:0; }
+  .card li a { display:flex; align-items:center; gap:10px; padding:7px 4px; border-bottom:1px solid #eee; color:#1f2937; text-decoration:none; font-size:15px; }
+  .card li a:hover { background:#f3f4f6; }
+  .card .n { flex:0 0 24px; height:24px; border-radius:50%; color:#fff; font-size:12px; display:flex; align-items:center; justify-content:center; }
+  .card .t { flex:1; }
+  .card .pg { font-size:12px; color:#6b7280; }
+  .sec { max-width:900px; margin:20px auto 0; padding:0 8px; font-size:22px; scroll-margin-top:56px; }
+  .page { max-width:900px; margin:16px auto; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,.2); scroll-margin-top:50px; }
+  .page img { display:block; width:100%; height:auto; }
+  @media (max-width:920px) { .page { margin:8px 0; } }
+  @media print { nav { display:none; } body { background:#fff; } .front { page-break-after:always; } .sec { display:none; } .page { margin:0; box-shadow:none; page-break-after:always; } }
+</style>
+</head>
+<body>
+<nav><a href="#contents">Contents</a><a href="#physics">Physics</a><a href="#chemistry">Chemistry</a><a href="#biology">Biology</a></nav>
+<section id="contents" class="front"><h1>Science</h1><p class="sub">Physics &middot; Chemistry &middot; Biology &mdash; 29 lectures in total</p><div class="cards"><div class="card" style="border-top-color:#1d4ed8"><h2><a href="#physics" style="color:#1d4ed8">Physics</a></h2><div class="tot">Total lectures: <b>8</b> &middot; 69 pages</div><ol><li><a href="#physics-p1"><span class="n" style="background:#1d4ed8">1</span><span class="t">Motion</span><span class="pg">p. 1</span></a></li><li><a href="#physics-p9"><span class="n" style="background:#1d4ed8">2</span><span class="t">Force and Laws of Motion</span><span class="pg">p. 9</span></a></li><li><a href="#physics-p16"><span class="n" style="background:#1d4ed8">3</span><span class="t">Gravitation and Work Done</span><span class="pg">p. 16</span></a></li><li><a href="#physics-p26"><span class="n" style="background:#1d4ed8">4</span><span class="t">Sound</span><span class="pg">p. 26</span></a></li><li><a href="#physics-p33"><span class="n" style="background:#1d4ed8">5</span><span class="t">Reflection and Refraction</span><span class="pg">p. 33</span></a></li><li><a href="#physics-p45"><span class="n" style="background:#1d4ed8">6</span><span class="t">Human Eye and Vision</span><span class="pg">p. 45</span></a></li><li><a href="#physics-p54"><span class="n" style="background:#1d4ed8">7</span><span class="t">Electricity</span><span class="pg">p. 54</span></a></li><li><a href="#physics-p62"><span class="n" style="background:#1d4ed8">8</span><span class="t">Magnetic Effect of Electric Current</span><span class="pg">p. 62</span></a></li></ol></div><div class="card" style="border-top-color:#7c3aed"><h2><a href="#chemistry" style="color:#7c3aed">Chemistry</a></h2><div class="tot">Total lectures: <b>8</b> &middot; 83 pages</div><ol><li><a href="#chemistry-p1"><span class="n" style="background:#7c3aed">1</span><span class="t">Matter</span><span class="pg">p. 1</span></a></li><li><a href="#chemistry-p6"><span class="n" style="background:#7c3aed">2</span><span class="t">Is Matter Pure?</span><span class="pg">p. 6</span></a></li><li><a href="#chemistry-p16"><span class="n" style="background:#7c3aed">3</span><span class="t">Atom and its Structure</span><span class="pg">p. 16</span></a></li><li><a href="#chemistry-p27"><span class="n" style="background:#7c3aed">4</span><span class="t">Periodic Table</span><span class="pg">p. 27</span></a></li><li><a href="#chemistry-p38"><span class="n" style="background:#7c3aed">5</span><span class="t">Chemical Reactions</span><span class="pg">p. 38</span></a></li><li><a href="#chemistry-p45"><span class="n" style="background:#7c3aed">6</span><span class="t">Metals and Non-Metals</span><span class="pg">p. 45</span></a></li><li><a href="#chemistry-p57"><span class="n" style="background:#7c3aed">7</span><span class="t">Acid, Base and Salt</span><span class="pg">p. 57</span></a></li><li><a href="#chemistry-p67"><span class="n" style="background:#7c3aed">8</span><span class="t">Carbon and its Compound</span><span class="pg">p. 67</span></a></li></ol></div><div class="card" style="border-top-color:#15803d"><h2><a href="#biology" style="color:#15803d">Biology</a></h2><div class="tot">Total lectures: <b>13</b> &middot; 141 pages</div><ol><li><a href="#biology-p1"><span class="n" style="background:#15803d">1</span><span class="t">Cell</span><span class="pg">p. 1</span></a></li><li><a href="#biology-p22"><span class="n" style="background:#15803d">2</span><span class="t">Plant Tissue</span><span class="pg">p. 22</span></a></li><li><a href="#biology-p31"><span class="n" style="background:#15803d">3</span><span class="t">Animal Tissue</span><span class="pg">p. 31</span></a></li><li><a href="#biology-p43"><span class="n" style="background:#15803d">4</span><span class="t">Plant Kingdom</span><span class="pg">p. 43</span></a></li><li><a href="#biology-p52"><span class="n" style="background:#15803d">5</span><span class="t">Animal Kingdom</span><span class="pg">p. 52</span></a></li><li><a href="#biology-p62"><span class="n" style="background:#15803d">6</span><span class="t">Nervous System</span><span class="pg">p. 62</span></a></li><li><a href="#biology-p70"><span class="n" style="background:#15803d">7</span><span class="t">Hormones &amp; Plant Movement</span><span class="pg">p. 70</span></a></li><li><a href="#biology-p79"><span class="n" style="background:#15803d">8</span><span class="t">Reproduction</span><span class="pg">p. 79</span></a></li><li><a href="#biology-p90"><span class="n" style="background:#15803d">9</span><span class="t">Digestion &amp; Respiration</span><span class="pg">p. 90</span></a></li><li><a href="#biology-p99"><span class="n" style="background:#15803d">10</span><span class="t">Circulatory and Excretory System</span><span class="pg">p. 99</span></a></li><li><a href="#biology-p109"><span class="n" style="background:#15803d">11</span><span class="t">Diseases</span><span class="pg">p. 109</span></a></li><li><a href="#biology-p121"><span class="n" style="background:#15803d">12</span><span class="t">Nutrition</span><span class="pg">p. 121</span></a></li><li><a href="#biology-p132"><span class="n" style="background:#15803d">13</span><span class="t">Genetics and Skeletal System</span><span class="pg">p. 132</span></a></li></ol></div></div></section>
+<section id="physics"><h2 class="sec">Physics</h2>
+<div class="page" id="physics-p1"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 1" src="images/physics/001.webp"></div>
+<div class="page" id="physics-p2"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 2" src="images/physics/002.webp"></div>
+<div class="page" id="physics-p3"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 3" src="images/physics/003.webp"></div>
+<div class="page" id="physics-p4"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 4" src="images/physics/004.webp"></div>
+<div class="page" id="physics-p5"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 5" src="images/physics/005.webp"></div>
+<div class="page" id="physics-p6"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 6" src="images/physics/006.webp"></div>
+<div class="page" id="physics-p7"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 7" src="images/physics/007.webp"></div>
+<div class="page" id="physics-p8"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 8" src="images/physics/008.webp"></div>
+<div class="page" id="physics-p9"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 9" src="images/physics/009.webp"></div>
+<div class="page" id="physics-p10"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 10" src="images/physics/010.webp"></div>
+<div class="page" id="physics-p11"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 11" src="images/physics/011.webp"></div>
+<div class="page" id="physics-p12"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 12" src="images/physics/012.webp"></div>
+<div class="page" id="physics-p13"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 13" src="images/physics/013.webp"></div>
+<div class="page" id="physics-p14"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 14" src="images/physics/014.webp"></div>
+<div class="page" id="physics-p15"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 15" src="images/physics/015.webp"></div>
+<div class="page" id="physics-p16"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 16" src="images/physics/016.webp"></div>
+<div class="page" id="physics-p17"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 17" src="images/physics/017.webp"></div>
+<div class="page" id="physics-p18"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 18" src="images/physics/018.webp"></div>
+<div class="page" id="physics-p19"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 19" src="images/physics/019.webp"></div>
+<div class="page" id="physics-p20"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 20" src="images/physics/020.webp"></div>
+<div class="page" id="physics-p21"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 21" src="images/physics/021.webp"></div>
+<div class="page" id="physics-p22"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 22" src="images/physics/022.webp"></div>
+<div class="page" id="physics-p23"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 23" src="images/physics/023.webp"></div>
+<div class="page" id="physics-p24"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 24" src="images/physics/024.webp"></div>
+<div class="page" id="physics-p25"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 25" src="images/physics/025.webp"></div>
+<div class="page" id="physics-p26"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 26" src="images/physics/026.webp"></div>
+<div class="page" id="physics-p27"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 27" src="images/physics/027.webp"></div>
+<div class="page" id="physics-p28"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 28" src="images/physics/028.webp"></div>
+<div class="page" id="physics-p29"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 29" src="images/physics/029.webp"></div>
+<div class="page" id="physics-p30"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 30" src="images/physics/030.webp"></div>
+<div class="page" id="physics-p31"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 31" src="images/physics/031.webp"></div>
+<div class="page" id="physics-p32"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 32" src="images/physics/032.webp"></div>
+<div class="page" id="physics-p33"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 33" src="images/physics/033.webp"></div>
+<div class="page" id="physics-p34"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 34" src="images/physics/034.webp"></div>
+<div class="page" id="physics-p35"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 35" src="images/physics/035.webp"></div>
+<div class="page" id="physics-p36"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 36" src="images/physics/036.webp"></div>
+<div class="page" id="physics-p37"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 37" src="images/physics/037.webp"></div>
+<div class="page" id="physics-p38"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 38" src="images/physics/038.webp"></div>
+<div class="page" id="physics-p39"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 39" src="images/physics/039.webp"></div>
+<div class="page" id="physics-p40"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 40" src="images/physics/040.webp"></div>
+<div class="page" id="physics-p41"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 41" src="images/physics/041.webp"></div>
+<div class="page" id="physics-p42"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 42" src="images/physics/042.webp"></div>
+<div class="page" id="physics-p43"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 43" src="images/physics/043.webp"></div>
+<div class="page" id="physics-p44"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 44" src="images/physics/044.webp"></div>
+<div class="page" id="physics-p45"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 45" src="images/physics/045.webp"></div>
+<div class="page" id="physics-p46"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 46" src="images/physics/046.webp"></div>
+<div class="page" id="physics-p47"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 47" src="images/physics/047.webp"></div>
+<div class="page" id="physics-p48"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 48" src="images/physics/048.webp"></div>
+<div class="page" id="physics-p49"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 49" src="images/physics/049.webp"></div>
+<div class="page" id="physics-p50"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 50" src="images/physics/050.webp"></div>
+<div class="page" id="physics-p51"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 51" src="images/physics/051.webp"></div>
+<div class="page" id="physics-p52"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 52" src="images/physics/052.webp"></div>
+<div class="page" id="physics-p53"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 53" src="images/physics/053.webp"></div>
+<div class="page" id="physics-p54"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 54" src="images/physics/054.webp"></div>
+<div class="page" id="physics-p55"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 55" src="images/physics/055.webp"></div>
+<div class="page" id="physics-p56"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 56" src="images/physics/056.webp"></div>
+<div class="page" id="physics-p57"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 57" src="images/physics/057.webp"></div>
+<div class="page" id="physics-p58"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 58" src="images/physics/058.webp"></div>
+<div class="page" id="physics-p59"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 59" src="images/physics/059.webp"></div>
+<div class="page" id="physics-p60"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 60" src="images/physics/060.webp"></div>
+<div class="page" id="physics-p61"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 61" src="images/physics/061.webp"></div>
+<div class="page" id="physics-p62"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 62" src="images/physics/062.webp"></div>
+<div class="page" id="physics-p63"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 63" src="images/physics/063.webp"></div>
+<div class="page" id="physics-p64"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 64" src="images/physics/064.webp"></div>
+<div class="page" id="physics-p65"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 65" src="images/physics/065.webp"></div>
+<div class="page" id="physics-p66"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 66" src="images/physics/066.webp"></div>
+<div class="page" id="physics-p67"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 67" src="images/physics/067.webp"></div>
+<div class="page" id="physics-p68"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 68" src="images/physics/068.webp"></div>
+<div class="page" id="physics-p69"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Physics page 69" src="images/physics/069.webp"></div>
+</section>
+<section id="chemistry"><h2 class="sec">Chemistry</h2>
+<div class="page" id="chemistry-p1"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 1" src="images/chemistry/001.webp"></div>
+<div class="page" id="chemistry-p2"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 2" src="images/chemistry/002.webp"></div>
+<div class="page" id="chemistry-p3"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 3" src="images/chemistry/003.webp"></div>
+<div class="page" id="chemistry-p4"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 4" src="images/chemistry/004.webp"></div>
+<div class="page" id="chemistry-p5"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 5" src="images/chemistry/005.webp"></div>
+<div class="page" id="chemistry-p6"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 6" src="images/chemistry/006.webp"></div>
+<div class="page" id="chemistry-p7"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 7" src="images/chemistry/007.webp"></div>
+<div class="page" id="chemistry-p8"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 8" src="images/chemistry/008.webp"></div>
+<div class="page" id="chemistry-p9"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 9" src="images/chemistry/009.webp"></div>
+<div class="page" id="chemistry-p10"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 10" src="images/chemistry/010.webp"></div>
+<div class="page" id="chemistry-p11"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 11" src="images/chemistry/011.webp"></div>
+<div class="page" id="chemistry-p12"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 12" src="images/chemistry/012.webp"></div>
+<div class="page" id="chemistry-p13"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 13" src="images/chemistry/013.webp"></div>
+<div class="page" id="chemistry-p14"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 14" src="images/chemistry/014.webp"></div>
+<div class="page" id="chemistry-p15"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 15" src="images/chemistry/015.webp"></div>
+<div class="page" id="chemistry-p16"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 16" src="images/chemistry/016.webp"></div>
+<div class="page" id="chemistry-p17"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 17" src="images/chemistry/017.webp"></div>
+<div class="page" id="chemistry-p18"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 18" src="images/chemistry/018.webp"></div>
+<div class="page" id="chemistry-p19"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 19" src="images/chemistry/019.webp"></div>
+<div class="page" id="chemistry-p20"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 20" src="images/chemistry/020.webp"></div>
+<div class="page" id="chemistry-p21"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 21" src="images/chemistry/021.webp"></div>
+<div class="page" id="chemistry-p22"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 22" src="images/chemistry/022.webp"></div>
+<div class="page" id="chemistry-p23"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 23" src="images/chemistry/023.webp"></div>
+<div class="page" id="chemistry-p24"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 24" src="images/chemistry/024.webp"></div>
+<div class="page" id="chemistry-p25"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 25" src="images/chemistry/025.webp"></div>
+<div class="page" id="chemistry-p26"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 26" src="images/chemistry/026.webp"></div>
+<div class="page" id="chemistry-p27"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 27" src="images/chemistry/027.webp"></div>
+<div class="page" id="chemistry-p28"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 28" src="images/chemistry/028.webp"></div>
+<div class="page" id="chemistry-p29"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 29" src="images/chemistry/029.webp"></div>
+<div class="page" id="chemistry-p30"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 30" src="images/chemistry/030.webp"></div>
+<div class="page" id="chemistry-p31"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 31" src="images/chemistry/031.webp"></div>
+<div class="page" id="chemistry-p32"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 32" src="images/chemistry/032.webp"></div>
+<div class="page" id="chemistry-p33"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 33" src="images/chemistry/033.webp"></div>
+<div class="page" id="chemistry-p34"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 34" src="images/chemistry/034.webp"></div>
+<div class="page" id="chemistry-p35"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 35" src="images/chemistry/035.webp"></div>
+<div class="page" id="chemistry-p36"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 36" src="images/chemistry/036.webp"></div>
+<div class="page" id="chemistry-p37"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 37" src="images/chemistry/037.webp"></div>
+<div class="page" id="chemistry-p38"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 38" src="images/chemistry/038.webp"></div>
+<div class="page" id="chemistry-p39"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 39" src="images/chemistry/039.webp"></div>
+<div class="page" id="chemistry-p40"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 40" src="images/chemistry/040.webp"></div>
+<div class="page" id="chemistry-p41"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 41" src="images/chemistry/041.webp"></div>
+<div class="page" id="chemistry-p42"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 42" src="images/chemistry/042.webp"></div>
+<div class="page" id="chemistry-p43"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 43" src="images/chemistry/043.webp"></div>
+<div class="page" id="chemistry-p44"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 44" src="images/chemistry/044.webp"></div>
+<div class="page" id="chemistry-p45"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 45" src="images/chemistry/045.webp"></div>
+<div class="page" id="chemistry-p46"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 46" src="images/chemistry/046.webp"></div>
+<div class="page" id="chemistry-p47"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 47" src="images/chemistry/047.webp"></div>
+<div class="page" id="chemistry-p48"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 48" src="images/chemistry/048.webp"></div>
+<div class="page" id="chemistry-p49"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 49" src="images/chemistry/049.webp"></div>
+<div class="page" id="chemistry-p50"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 50" src="images/chemistry/050.webp"></div>
+<div class="page" id="chemistry-p51"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 51" src="images/chemistry/051.webp"></div>
+<div class="page" id="chemistry-p52"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 52" src="images/chemistry/052.webp"></div>
+<div class="page" id="chemistry-p53"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 53" src="images/chemistry/053.webp"></div>
+<div class="page" id="chemistry-p54"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 54" src="images/chemistry/054.webp"></div>
+<div class="page" id="chemistry-p55"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 55" src="images/chemistry/055.webp"></div>
+<div class="page" id="chemistry-p56"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 56" src="images/chemistry/056.webp"></div>
+<div class="page" id="chemistry-p57"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 57" src="images/chemistry/057.webp"></div>
+<div class="page" id="chemistry-p58"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 58" src="images/chemistry/058.webp"></div>
+<div class="page" id="chemistry-p59"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 59" src="images/chemistry/059.webp"></div>
+<div class="page" id="chemistry-p60"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 60" src="images/chemistry/060.webp"></div>
+<div class="page" id="chemistry-p61"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 61" src="images/chemistry/061.webp"></div>
+<div class="page" id="chemistry-p62"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 62" src="images/chemistry/062.webp"></div>
+<div class="page" id="chemistry-p63"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 63" src="images/chemistry/063.webp"></div>
+<div class="page" id="chemistry-p64"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 64" src="images/chemistry/064.webp"></div>
+<div class="page" id="chemistry-p65"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 65" src="images/chemistry/065.webp"></div>
+<div class="page" id="chemistry-p66"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 66" src="images/chemistry/066.webp"></div>
+<div class="page" id="chemistry-p67"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 67" src="images/chemistry/067.webp"></div>
+<div class="page" id="chemistry-p68"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 68" src="images/chemistry/068.webp"></div>
+<div class="page" id="chemistry-p69"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 69" src="images/chemistry/069.webp"></div>
+<div class="page" id="chemistry-p70"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 70" src="images/chemistry/070.webp"></div>
+<div class="page" id="chemistry-p71"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 71" src="images/chemistry/071.webp"></div>
+<div class="page" id="chemistry-p72"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 72" src="images/chemistry/072.webp"></div>
+<div class="page" id="chemistry-p73"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 73" src="images/chemistry/073.webp"></div>
+<div class="page" id="chemistry-p74"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 74" src="images/chemistry/074.webp"></div>
+<div class="page" id="chemistry-p75"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 75" src="images/chemistry/075.webp"></div>
+<div class="page" id="chemistry-p76"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 76" src="images/chemistry/076.webp"></div>
+<div class="page" id="chemistry-p77"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 77" src="images/chemistry/077.webp"></div>
+<div class="page" id="chemistry-p78"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 78" src="images/chemistry/078.webp"></div>
+<div class="page" id="chemistry-p79"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Chemistry page 79" src="images/chemistry/079.webp"></div>
+<div class="page" id="chemistry-p80"><img loading="lazy" decoding="async" width="1240" height="1755" alt="Chemistry page 80" src="images/chemistry/080.webp"></div>
+<div class="page" id="chemistry-p81"><img loading="lazy" decoding="async" width="1240" height="1755" alt="Chemistry page 81" src="images/chemistry/081.webp"></div>
+<div class="page" id="chemistry-p82"><img loading="lazy" decoding="async" width="1240" height="1755" alt="Chemistry page 82" src="images/chemistry/082.webp"></div>
+<div class="page" id="chemistry-p83"><img loading="lazy" decoding="async" width="1240" height="1755" alt="Chemistry page 83" src="images/chemistry/083.webp"></div>
+</section>
+<section id="biology"><h2 class="sec">Biology</h2>
+<div class="page" id="biology-p1"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 1" src="images/biology/001.webp"></div>
+<div class="page" id="biology-p2"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 2" src="images/biology/002.webp"></div>
+<div class="page" id="biology-p3"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 3" src="images/biology/003.webp"></div>
+<div class="page" id="biology-p4"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 4" src="images/biology/004.webp"></div>
+<div class="page" id="biology-p5"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 5" src="images/biology/005.webp"></div>
+<div class="page" id="biology-p6"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 6" src="images/biology/006.webp"></div>
+<div class="page" id="biology-p7"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 7" src="images/biology/007.webp"></div>
+<div class="page" id="biology-p8"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 8" src="images/biology/008.webp"></div>
+<div class="page" id="biology-p9"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 9" src="images/biology/009.webp"></div>
+<div class="page" id="biology-p10"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 10" src="images/biology/010.webp"></div>
+<div class="page" id="biology-p11"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 11" src="images/biology/011.webp"></div>
+<div class="page" id="biology-p12"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 12" src="images/biology/012.webp"></div>
+<div class="page" id="biology-p13"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 13" src="images/biology/013.webp"></div>
+<div class="page" id="biology-p14"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 14" src="images/biology/014.webp"></div>
+<div class="page" id="biology-p15"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 15" src="images/biology/015.webp"></div>
+<div class="page" id="biology-p16"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 16" src="images/biology/016.webp"></div>
+<div class="page" id="biology-p17"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 17" src="images/biology/017.webp"></div>
+<div class="page" id="biology-p18"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 18" src="images/biology/018.webp"></div>
+<div class="page" id="biology-p19"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 19" src="images/biology/019.webp"></div>
+<div class="page" id="biology-p20"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 20" src="images/biology/020.webp"></div>
+<div class="page" id="biology-p21"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 21" src="images/biology/021.webp"></div>
+<div class="page" id="biology-p22"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 22" src="images/biology/022.webp"></div>
+<div class="page" id="biology-p23"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 23" src="images/biology/023.webp"></div>
+<div class="page" id="biology-p24"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 24" src="images/biology/024.webp"></div>
+<div class="page" id="biology-p25"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 25" src="images/biology/025.webp"></div>
+<div class="page" id="biology-p26"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 26" src="images/biology/026.webp"></div>
+<div class="page" id="biology-p27"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 27" src="images/biology/027.webp"></div>
+<div class="page" id="biology-p28"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 28" src="images/biology/028.webp"></div>
+<div class="page" id="biology-p29"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 29" src="images/biology/029.webp"></div>
+<div class="page" id="biology-p30"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 30" src="images/biology/030.webp"></div>
+<div class="page" id="biology-p31"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 31" src="images/biology/031.webp"></div>
+<div class="page" id="biology-p32"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 32" src="images/biology/032.webp"></div>
+<div class="page" id="biology-p33"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 33" src="images/biology/033.webp"></div>
+<div class="page" id="biology-p34"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 34" src="images/biology/034.webp"></div>
+<div class="page" id="biology-p35"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 35" src="images/biology/035.webp"></div>
+<div class="page" id="biology-p36"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 36" src="images/biology/036.webp"></div>
+<div class="page" id="biology-p37"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 37" src="images/biology/037.webp"></div>
+<div class="page" id="biology-p38"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 38" src="images/biology/038.webp"></div>
+<div class="page" id="biology-p39"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 39" src="images/biology/039.webp"></div>
+<div class="page" id="biology-p40"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 40" src="images/biology/040.webp"></div>
+<div class="page" id="biology-p41"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 41" src="images/biology/041.webp"></div>
+<div class="page" id="biology-p42"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 42" src="images/biology/042.webp"></div>
+<div class="page" id="biology-p43"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 43" src="images/biology/043.webp"></div>
+<div class="page" id="biology-p44"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 44" src="images/biology/044.webp"></div>
+<div class="page" id="biology-p45"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 45" src="images/biology/045.webp"></div>
+<div class="page" id="biology-p46"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 46" src="images/biology/046.webp"></div>
+<div class="page" id="biology-p47"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 47" src="images/biology/047.webp"></div>
+<div class="page" id="biology-p48"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 48" src="images/biology/048.webp"></div>
+<div class="page" id="biology-p49"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 49" src="images/biology/049.webp"></div>
+<div class="page" id="biology-p50"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 50" src="images/biology/050.webp"></div>
+<div class="page" id="biology-p51"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 51" src="images/biology/051.webp"></div>
+<div class="page" id="biology-p52"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 52" src="images/biology/052.webp"></div>
+<div class="page" id="biology-p53"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 53" src="images/biology/053.webp"></div>
+<div class="page" id="biology-p54"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 54" src="images/biology/054.webp"></div>
+<div class="page" id="biology-p55"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 55" src="images/biology/055.webp"></div>
+<div class="page" id="biology-p56"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 56" src="images/biology/056.webp"></div>
+<div class="page" id="biology-p57"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 57" src="images/biology/057.webp"></div>
+<div class="page" id="biology-p58"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 58" src="images/biology/058.webp"></div>
+<div class="page" id="biology-p59"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 59" src="images/biology/059.webp"></div>
+<div class="page" id="biology-p60"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 60" src="images/biology/060.webp"></div>
+<div class="page" id="biology-p61"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 61" src="images/biology/061.webp"></div>
+<div class="page" id="biology-p62"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 62" src="images/biology/062.webp"></div>
+<div class="page" id="biology-p63"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 63" src="images/biology/063.webp"></div>
+<div class="page" id="biology-p64"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 64" src="images/biology/064.webp"></div>
+<div class="page" id="biology-p65"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 65" src="images/biology/065.webp"></div>
+<div class="page" id="biology-p66"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 66" src="images/biology/066.webp"></div>
+<div class="page" id="biology-p67"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 67" src="images/biology/067.webp"></div>
+<div class="page" id="biology-p68"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 68" src="images/biology/068.webp"></div>
+<div class="page" id="biology-p69"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 69" src="images/biology/069.webp"></div>
+<div class="page" id="biology-p70"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 70" src="images/biology/070.webp"></div>
+<div class="page" id="biology-p71"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 71" src="images/biology/071.webp"></div>
+<div class="page" id="biology-p72"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 72" src="images/biology/072.webp"></div>
+<div class="page" id="biology-p73"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 73" src="images/biology/073.webp"></div>
+<div class="page" id="biology-p74"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 74" src="images/biology/074.webp"></div>
+<div class="page" id="biology-p75"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 75" src="images/biology/075.webp"></div>
+<div class="page" id="biology-p76"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 76" src="images/biology/076.webp"></div>
+<div class="page" id="biology-p77"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 77" src="images/biology/077.webp"></div>
+<div class="page" id="biology-p78"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 78" src="images/biology/078.webp"></div>
+<div class="page" id="biology-p79"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 79" src="images/biology/079.webp"></div>
+<div class="page" id="biology-p80"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 80" src="images/biology/080.webp"></div>
+<div class="page" id="biology-p81"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 81" src="images/biology/081.webp"></div>
+<div class="page" id="biology-p82"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 82" src="images/biology/082.webp"></div>
+<div class="page" id="biology-p83"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 83" src="images/biology/083.webp"></div>
+<div class="page" id="biology-p84"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 84" src="images/biology/084.webp"></div>
+<div class="page" id="biology-p85"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 85" src="images/biology/085.webp"></div>
+<div class="page" id="biology-p86"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 86" src="images/biology/086.webp"></div>
+<div class="page" id="biology-p87"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 87" src="images/biology/087.webp"></div>
+<div class="page" id="biology-p88"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 88" src="images/biology/088.webp"></div>
+<div class="page" id="biology-p89"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 89" src="images/biology/089.webp"></div>
+<div class="page" id="biology-p90"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 90" src="images/biology/090.webp"></div>
+<div class="page" id="biology-p91"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 91" src="images/biology/091.webp"></div>
+<div class="page" id="biology-p92"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 92" src="images/biology/092.webp"></div>
+<div class="page" id="biology-p93"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 93" src="images/biology/093.webp"></div>
+<div class="page" id="biology-p94"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 94" src="images/biology/094.webp"></div>
+<div class="page" id="biology-p95"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 95" src="images/biology/095.webp"></div>
+<div class="page" id="biology-p96"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 96" src="images/biology/096.webp"></div>
+<div class="page" id="biology-p97"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 97" src="images/biology/097.webp"></div>
+<div class="page" id="biology-p98"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 98" src="images/biology/098.webp"></div>
+<div class="page" id="biology-p99"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 99" src="images/biology/099.webp"></div>
+<div class="page" id="biology-p100"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 100" src="images/biology/100.webp"></div>
+<div class="page" id="biology-p101"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 101" src="images/biology/101.webp"></div>
+<div class="page" id="biology-p102"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 102" src="images/biology/102.webp"></div>
+<div class="page" id="biology-p103"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 103" src="images/biology/103.webp"></div>
+<div class="page" id="biology-p104"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 104" src="images/biology/104.webp"></div>
+<div class="page" id="biology-p105"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 105" src="images/biology/105.webp"></div>
+<div class="page" id="biology-p106"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 106" src="images/biology/106.webp"></div>
+<div class="page" id="biology-p107"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 107" src="images/biology/107.webp"></div>
+<div class="page" id="biology-p108"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 108" src="images/biology/108.webp"></div>
+<div class="page" id="biology-p109"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 109" src="images/biology/109.webp"></div>
+<div class="page" id="biology-p110"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 110" src="images/biology/110.webp"></div>
+<div class="page" id="biology-p111"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 111" src="images/biology/111.webp"></div>
+<div class="page" id="biology-p112"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 112" src="images/biology/112.webp"></div>
+<div class="page" id="biology-p113"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 113" src="images/biology/113.webp"></div>
+<div class="page" id="biology-p114"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 114" src="images/biology/114.webp"></div>
+<div class="page" id="biology-p115"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 115" src="images/biology/115.webp"></div>
+<div class="page" id="biology-p116"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 116" src="images/biology/116.webp"></div>
+<div class="page" id="biology-p117"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 117" src="images/biology/117.webp"></div>
+<div class="page" id="biology-p118"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 118" src="images/biology/118.webp"></div>
+<div class="page" id="biology-p119"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 119" src="images/biology/119.webp"></div>
+<div class="page" id="biology-p120"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 120" src="images/biology/120.webp"></div>
+<div class="page" id="biology-p121"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 121" src="images/biology/121.webp"></div>
+<div class="page" id="biology-p122"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 122" src="images/biology/122.webp"></div>
+<div class="page" id="biology-p123"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 123" src="images/biology/123.webp"></div>
+<div class="page" id="biology-p124"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 124" src="images/biology/124.webp"></div>
+<div class="page" id="biology-p125"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 125" src="images/biology/125.webp"></div>
+<div class="page" id="biology-p126"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 126" src="images/biology/126.webp"></div>
+<div class="page" id="biology-p127"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 127" src="images/biology/127.webp"></div>
+<div class="page" id="biology-p128"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 128" src="images/biology/128.webp"></div>
+<div class="page" id="biology-p129"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 129" src="images/biology/129.webp"></div>
+<div class="page" id="biology-p130"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 130" src="images/biology/130.webp"></div>
+<div class="page" id="biology-p131"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 131" src="images/biology/131.webp"></div>
+<div class="page" id="biology-p132"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 132" src="images/biology/132.webp"></div>
+<div class="page" id="biology-p133"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 133" src="images/biology/133.webp"></div>
+<div class="page" id="biology-p134"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 134" src="images/biology/134.webp"></div>
+<div class="page" id="biology-p135"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 135" src="images/biology/135.webp"></div>
+<div class="page" id="biology-p136"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 136" src="images/biology/136.webp"></div>
+<div class="page" id="biology-p137"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 137" src="images/biology/137.webp"></div>
+<div class="page" id="biology-p138"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 138" src="images/biology/138.webp"></div>
+<div class="page" id="biology-p139"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 139" src="images/biology/139.webp"></div>
+<div class="page" id="biology-p140"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 140" src="images/biology/140.webp"></div>
+<div class="page" id="biology-p141"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Biology page 141" src="images/biology/141.webp"></div>
+</section>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geography</title>
+<style>
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:#e9e9ec; font-family:system-ui,sans-serif; color:#1f2937; }
+  nav { position:sticky; top:0; z-index:10; display:flex; justify-content:center; flex-wrap:wrap; gap:8px; padding:8px; background:#1f2937; }
+  nav a { color:#fff; text-decoration:none; font-size:14px; padding:6px 14px; border-radius:999px; background:#374151; }
+  nav a:hover { background:#4b5563; }
+  .front { max-width:700px; margin:0 auto; padding:28px 14px 8px; scroll-margin-top:56px; }
+  .front h1 { margin:0; text-align:center; font-size:38px; color:#1e1b5e; letter-spacing:.5px; }
+  .front .sub { text-align:center; margin:6px 0 22px; color:#4b5563; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+  .card { background:#fff; border-radius:12px; padding:16px 18px; box-shadow:0 2px 10px rgba(0,0,0,.15); border-top:5px solid #1e1b5e; }
+  .card h2 { margin:0 0 4px; font-size:20px; }
+  .card h2 a { text-decoration:none; }
+  .tot { font-size:14px; color:#4b5563; margin-bottom:10px; }
+  .card ol { list-style:none; margin:0; padding:0; }
+  .card li a { display:flex; align-items:center; gap:10px; padding:7px 4px; border-bottom:1px solid #eee; color:#1f2937; text-decoration:none; font-size:15px; }
+  .card li a:hover { background:#f3f4f6; }
+  .card .n { flex:0 0 24px; height:24px; border-radius:50%; color:#fff; font-size:12px; display:flex; align-items:center; justify-content:center; }
+  .card .t { flex:1; }
+  .card .pg { font-size:12px; color:#6b7280; }
+  .sec { max-width:900px; margin:20px auto 0; padding:0 8px; font-size:22px; scroll-margin-top:56px; }
+  .page { max-width:900px; margin:16px auto; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,.2); scroll-margin-top:50px; }
+  .page img { display:block; width:100%; height:auto; }
+  @media (max-width:920px) { .page { margin:8px 0; } }
+  @media print { nav { display:none; } body { background:#fff; } .front { page-break-after:always; } .sec { display:none; } .page { margin:0; box-shadow:none; page-break-after:always; } }
+</style>
+</head>
+<body>
+<nav><a href="#contents">Contents</a></nav>
+<section id="contents" class="front"><h1>Geography</h1><p class="sub">Total lectures: <b>27</b> &middot; 312 pages</p><div class="cards" style="display:block"><div class="card" style="border-top-color:#1e1b5e"><div class="tot">Total lectures: <b>27</b> &middot; 312 pages</div><ol><li><a href="#p1"><span class="n" style="background:#1e1b5e">1</span><span class="t">Solar System</span><span class="pg">p. 1</span></a></li><li><a href="#p12"><span class="n" style="background:#1e1b5e">2</span><span class="t">Latitude &amp; Longitude</span><span class="pg">p. 12</span></a></li><li><a href="#p21"><span class="n" style="background:#1e1b5e">3</span><span class="t">Earth’s Interior &amp; Plate Tectonics</span><span class="pg">p. 21</span></a></li><li><a href="#p31"><span class="n" style="background:#1e1b5e">4</span><span class="t">Continents &amp; Oceans</span><span class="pg">p. 31</span></a></li><li><a href="#p38"><span class="n" style="background:#1e1b5e">5</span><span class="t">Rocks and Volcanism</span><span class="pg">p. 38</span></a></li><li><a href="#p48"><span class="n" style="background:#1e1b5e">6</span><span class="t">Geomorphic Processes</span><span class="pg">p. 48</span></a></li><li><a href="#p56"><span class="n" style="background:#1e1b5e">7</span><span class="t">Landforms</span><span class="pg">p. 56</span></a></li><li><a href="#p62"><span class="n" style="background:#1e1b5e">8</span><span class="t">Atmosphere</span><span class="pg">p. 62</span></a></li><li><a href="#p70"><span class="n" style="background:#1e1b5e">9</span><span class="t">Condensation and Precipitation</span><span class="pg">p. 70</span></a></li><li><a href="#p77"><span class="n" style="background:#1e1b5e">10</span><span class="t">Winds</span><span class="pg">p. 77</span></a></li><li><a href="#p86"><span class="n" style="background:#1e1b5e">11</span><span class="t">Cyclone &amp; Ocean Currents</span><span class="pg">p. 86</span></a></li><li><a href="#p94"><span class="n" style="background:#1e1b5e">12</span><span class="t">World Map</span><span class="pg">p. 94</span></a></li><li><a href="#p121"><span class="n" style="background:#1e1b5e">13</span><span class="t">India &amp; Its Location</span><span class="pg">p. 121</span></a></li><li><a href="#p132"><span class="n" style="background:#1e1b5e">14</span><span class="t">Himalayas</span><span class="pg">p. 132</span></a></li><li><a href="#p143"><span class="n" style="background:#1e1b5e">15</span><span class="t">Peninsular Plateau</span><span class="pg">p. 143</span></a></li><li><a href="#p157"><span class="n" style="background:#1e1b5e">16</span><span class="t">Plains &amp; Islands</span><span class="pg">p. 157</span></a></li><li><a href="#p168"><span class="n" style="background:#1e1b5e">17</span><span class="t">Himalayan Rivers</span><span class="pg">p. 168</span></a></li><li><a href="#p180"><span class="n" style="background:#1e1b5e">18</span><span class="t">Peninsular Rivers</span><span class="pg">p. 180</span></a></li><li><a href="#p192"><span class="n" style="background:#1e1b5e">19</span><span class="t">Dams, Lakes &amp; Waterfalls</span><span class="pg">p. 192</span></a></li><li><a href="#p206"><span class="n" style="background:#1e1b5e">20</span><span class="t">Monsoon</span><span class="pg">p. 206</span></a></li><li><a href="#p220"><span class="n" style="background:#1e1b5e">21</span><span class="t">Forest &amp; Grasslands</span><span class="pg">p. 220</span></a></li><li><a href="#p229"><span class="n" style="background:#1e1b5e">22</span><span class="t">Soil</span><span class="pg">p. 229</span></a></li><li><a href="#p238"><span class="n" style="background:#1e1b5e">23</span><span class="t">Agriculture</span><span class="pg">p. 238</span></a></li><li><a href="#p253"><span class="n" style="background:#1e1b5e">24</span><span class="t">Minerals</span><span class="pg">p. 253</span></a></li><li><a href="#p266"><span class="n" style="background:#1e1b5e">25</span><span class="t">Transport</span><span class="pg">p. 266</span></a></li><li><a href="#p277"><span class="n" style="background:#1e1b5e">26</span><span class="t">World Map</span><span class="pg">p. 277</span></a></li><li><a href="#p304"><span class="n" style="background:#1e1b5e">27</span><span class="t">Human Geography</span><span class="pg">p. 304</span></a></li></ol></div></div></section>
+<div class="page" id="p1"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 1" src="images/001.webp"></div>
+<div class="page" id="p2"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 2" src="images/002.webp"></div>
+<div class="page" id="p3"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 3" src="images/003.webp"></div>
+<div class="page" id="p4"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 4" src="images/004.webp"></div>
+<div class="page" id="p5"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 5" src="images/005.webp"></div>
+<div class="page" id="p6"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 6" src="images/006.webp"></div>
+<div class="page" id="p7"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 7" src="images/007.webp"></div>
+<div class="page" id="p8"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 8" src="images/008.webp"></div>
+<div class="page" id="p9"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 9" src="images/009.webp"></div>
+<div class="page" id="p10"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 10" src="images/010.webp"></div>
+<div class="page" id="p11"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 11" src="images/011.webp"></div>
+<div class="page" id="p12"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 12" src="images/012.webp"></div>
+<div class="page" id="p13"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 13" src="images/013.webp"></div>
+<div class="page" id="p14"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 14" src="images/014.webp"></div>
+<div class="page" id="p15"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 15" src="images/015.webp"></div>
+<div class="page" id="p16"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 16" src="images/016.webp"></div>
+<div class="page" id="p17"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 17" src="images/017.webp"></div>
+<div class="page" id="p18"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 18" src="images/018.webp"></div>
+<div class="page" id="p19"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 19" src="images/019.webp"></div>
+<div class="page" id="p20"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 20" src="images/020.webp"></div>
+<div class="page" id="p21"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 21" src="images/021.webp"></div>
+<div class="page" id="p22"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 22" src="images/022.webp"></div>
+<div class="page" id="p23"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 23" src="images/023.webp"></div>
+<div class="page" id="p24"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 24" src="images/024.webp"></div>
+<div class="page" id="p25"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 25" src="images/025.webp"></div>
+<div class="page" id="p26"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 26" src="images/026.webp"></div>
+<div class="page" id="p27"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 27" src="images/027.webp"></div>
+<div class="page" id="p28"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 28" src="images/028.webp"></div>
+<div class="page" id="p29"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 29" src="images/029.webp"></div>
+<div class="page" id="p30"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 30" src="images/030.webp"></div>
+<div class="page" id="p31"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 31" src="images/031.webp"></div>
+<div class="page" id="p32"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 32" src="images/032.webp"></div>
+<div class="page" id="p33"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 33" src="images/033.webp"></div>
+<div class="page" id="p34"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 34" src="images/034.webp"></div>
+<div class="page" id="p35"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 35" src="images/035.webp"></div>
+<div class="page" id="p36"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 36" src="images/036.webp"></div>
+<div class="page" id="p37"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 37" src="images/037.webp"></div>
+<div class="page" id="p38"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 38" src="images/038.webp"></div>
+<div class="page" id="p39"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 39" src="images/039.webp"></div>
+<div class="page" id="p40"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 40" src="images/040.webp"></div>
+<div class="page" id="p41"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 41" src="images/041.webp"></div>
+<div class="page" id="p42"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 42" src="images/042.webp"></div>
+<div class="page" id="p43"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 43" src="images/043.webp"></div>
+<div class="page" id="p44"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 44" src="images/044.webp"></div>
+<div class="page" id="p45"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 45" src="images/045.webp"></div>
+<div class="page" id="p46"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 46" src="images/046.webp"></div>
+<div class="page" id="p47"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 47" src="images/047.webp"></div>
+<div class="page" id="p48"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 48" src="images/048.webp"></div>
+<div class="page" id="p49"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 49" src="images/049.webp"></div>
+<div class="page" id="p50"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 50" src="images/050.webp"></div>
+<div class="page" id="p51"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 51" src="images/051.webp"></div>
+<div class="page" id="p52"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 52" src="images/052.webp"></div>
+<div class="page" id="p53"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 53" src="images/053.webp"></div>
+<div class="page" id="p54"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 54" src="images/054.webp"></div>
+<div class="page" id="p55"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 55" src="images/055.webp"></div>
+<div class="page" id="p56"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 56" src="images/056.webp"></div>
+<div class="page" id="p57"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 57" src="images/057.webp"></div>
+<div class="page" id="p58"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 58" src="images/058.webp"></div>
+<div class="page" id="p59"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 59" src="images/059.webp"></div>
+<div class="page" id="p60"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 60" src="images/060.webp"></div>
+<div class="page" id="p61"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 61" src="images/061.webp"></div>
+<div class="page" id="p62"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 62" src="images/062.webp"></div>
+<div class="page" id="p63"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 63" src="images/063.webp"></div>
+<div class="page" id="p64"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 64" src="images/064.webp"></div>
+<div class="page" id="p65"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 65" src="images/065.webp"></div>
+<div class="page" id="p66"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 66" src="images/066.webp"></div>
+<div class="page" id="p67"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 67" src="images/067.webp"></div>
+<div class="page" id="p68"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 68" src="images/068.webp"></div>
+<div class="page" id="p69"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 69" src="images/069.webp"></div>
+<div class="page" id="p70"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 70" src="images/070.webp"></div>
+<div class="page" id="p71"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 71" src="images/071.webp"></div>
+<div class="page" id="p72"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 72" src="images/072.webp"></div>
+<div class="page" id="p73"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 73" src="images/073.webp"></div>
+<div class="page" id="p74"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 74" src="images/074.webp"></div>
+<div class="page" id="p75"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 75" src="images/075.webp"></div>
+<div class="page" id="p76"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 76" src="images/076.webp"></div>
+<div class="page" id="p77"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 77" src="images/077.webp"></div>
+<div class="page" id="p78"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 78" src="images/078.webp"></div>
+<div class="page" id="p79"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 79" src="images/079.webp"></div>
+<div class="page" id="p80"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 80" src="images/080.webp"></div>
+<div class="page" id="p81"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 81" src="images/081.webp"></div>
+<div class="page" id="p82"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 82" src="images/082.webp"></div>
+<div class="page" id="p83"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 83" src="images/083.webp"></div>
+<div class="page" id="p84"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 84" src="images/084.webp"></div>
+<div class="page" id="p85"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 85" src="images/085.webp"></div>
+<div class="page" id="p86"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 86" src="images/086.webp"></div>
+<div class="page" id="p87"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 87" src="images/087.webp"></div>
+<div class="page" id="p88"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 88" src="images/088.webp"></div>
+<div class="page" id="p89"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 89" src="images/089.webp"></div>
+<div class="page" id="p90"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 90" src="images/090.webp"></div>
+<div class="page" id="p91"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 91" src="images/091.webp"></div>
+<div class="page" id="p92"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 92" src="images/092.webp"></div>
+<div class="page" id="p93"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 93" src="images/093.webp"></div>
+<div class="page" id="p94"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 94" src="images/094.webp"></div>
+<div class="page" id="p95"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 95" src="images/095.webp"></div>
+<div class="page" id="p96"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 96" src="images/096.webp"></div>
+<div class="page" id="p97"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 97" src="images/097.webp"></div>
+<div class="page" id="p98"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 98" src="images/098.webp"></div>
+<div class="page" id="p99"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 99" src="images/099.webp"></div>
+<div class="page" id="p100"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 100" src="images/100.webp"></div>
+<div class="page" id="p101"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 101" src="images/101.webp"></div>
+<div class="page" id="p102"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 102" src="images/102.webp"></div>
+<div class="page" id="p103"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 103" src="images/103.webp"></div>
+<div class="page" id="p104"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 104" src="images/104.webp"></div>
+<div class="page" id="p105"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 105" src="images/105.webp"></div>
+<div class="page" id="p106"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 106" src="images/106.webp"></div>
+<div class="page" id="p107"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 107" src="images/107.webp"></div>
+<div class="page" id="p108"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 108" src="images/108.webp"></div>
+<div class="page" id="p109"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 109" src="images/109.webp"></div>
+<div class="page" id="p110"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 110" src="images/110.webp"></div>
+<div class="page" id="p111"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 111" src="images/111.webp"></div>
+<div class="page" id="p112"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 112" src="images/112.webp"></div>
+<div class="page" id="p113"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 113" src="images/113.webp"></div>
+<div class="page" id="p114"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 114" src="images/114.webp"></div>
+<div class="page" id="p115"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 115" src="images/115.webp"></div>
+<div class="page" id="p116"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 116" src="images/116.webp"></div>
+<div class="page" id="p117"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 117" src="images/117.webp"></div>
+<div class="page" id="p118"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 118" src="images/118.webp"></div>
+<div class="page" id="p119"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 119" src="images/119.webp"></div>
+<div class="page" id="p120"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 120" src="images/120.webp"></div>
+<div class="page" id="p121"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 121" src="images/121.webp"></div>
+<div class="page" id="p122"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 122" src="images/122.webp"></div>
+<div class="page" id="p123"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 123" src="images/123.webp"></div>
+<div class="page" id="p124"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 124" src="images/124.webp"></div>
+<div class="page" id="p125"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 125" src="images/125.webp"></div>
+<div class="page" id="p126"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 126" src="images/126.webp"></div>
+<div class="page" id="p127"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 127" src="images/127.webp"></div>
+<div class="page" id="p128"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 128" src="images/128.webp"></div>
+<div class="page" id="p129"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 129" src="images/129.webp"></div>
+<div class="page" id="p130"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 130" src="images/130.webp"></div>
+<div class="page" id="p131"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 131" src="images/131.webp"></div>
+<div class="page" id="p132"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 132" src="images/132.webp"></div>
+<div class="page" id="p133"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 133" src="images/133.webp"></div>
+<div class="page" id="p134"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 134" src="images/134.webp"></div>
+<div class="page" id="p135"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 135" src="images/135.webp"></div>
+<div class="page" id="p136"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 136" src="images/136.webp"></div>
+<div class="page" id="p137"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 137" src="images/137.webp"></div>
+<div class="page" id="p138"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 138" src="images/138.webp"></div>
+<div class="page" id="p139"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 139" src="images/139.webp"></div>
+<div class="page" id="p140"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 140" src="images/140.webp"></div>
+<div class="page" id="p141"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 141" src="images/141.webp"></div>
+<div class="page" id="p142"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 142" src="images/142.webp"></div>
+<div class="page" id="p143"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 143" src="images/143.webp"></div>
+<div class="page" id="p144"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 144" src="images/144.webp"></div>
+<div class="page" id="p145"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 145" src="images/145.webp"></div>
+<div class="page" id="p146"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 146" src="images/146.webp"></div>
+<div class="page" id="p147"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 147" src="images/147.webp"></div>
+<div class="page" id="p148"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 148" src="images/148.webp"></div>
+<div class="page" id="p149"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 149" src="images/149.webp"></div>
+<div class="page" id="p150"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 150" src="images/150.webp"></div>
+<div class="page" id="p151"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 151" src="images/151.webp"></div>
+<div class="page" id="p152"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 152" src="images/152.webp"></div>
+<div class="page" id="p153"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 153" src="images/153.webp"></div>
+<div class="page" id="p154"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 154" src="images/154.webp"></div>
+<div class="page" id="p155"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 155" src="images/155.webp"></div>
+<div class="page" id="p156"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 156" src="images/156.webp"></div>
+<div class="page" id="p157"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 157" src="images/157.webp"></div>
+<div class="page" id="p158"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 158" src="images/158.webp"></div>
+<div class="page" id="p159"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 159" src="images/159.webp"></div>
+<div class="page" id="p160"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 160" src="images/160.webp"></div>
+<div class="page" id="p161"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 161" src="images/161.webp"></div>
+<div class="page" id="p162"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 162" src="images/162.webp"></div>
+<div class="page" id="p163"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 163" src="images/163.webp"></div>
+<div class="page" id="p164"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 164" src="images/164.webp"></div>
+<div class="page" id="p165"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 165" src="images/165.webp"></div>
+<div class="page" id="p166"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 166" src="images/166.webp"></div>
+<div class="page" id="p167"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 167" src="images/167.webp"></div>
+<div class="page" id="p168"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 168" src="images/168.webp"></div>
+<div class="page" id="p169"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 169" src="images/169.webp"></div>
+<div class="page" id="p170"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 170" src="images/170.webp"></div>
+<div class="page" id="p171"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 171" src="images/171.webp"></div>
+<div class="page" id="p172"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 172" src="images/172.webp"></div>
+<div class="page" id="p173"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 173" src="images/173.webp"></div>
+<div class="page" id="p174"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 174" src="images/174.webp"></div>
+<div class="page" id="p175"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 175" src="images/175.webp"></div>
+<div class="page" id="p176"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 176" src="images/176.webp"></div>
+<div class="page" id="p177"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 177" src="images/177.webp"></div>
+<div class="page" id="p178"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 178" src="images/178.webp"></div>
+<div class="page" id="p179"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 179" src="images/179.webp"></div>
+<div class="page" id="p180"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 180" src="images/180.webp"></div>
+<div class="page" id="p181"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 181" src="images/181.webp"></div>
+<div class="page" id="p182"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 182" src="images/182.webp"></div>
+<div class="page" id="p183"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 183" src="images/183.webp"></div>
+<div class="page" id="p184"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 184" src="images/184.webp"></div>
+<div class="page" id="p185"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 185" src="images/185.webp"></div>
+<div class="page" id="p186"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 186" src="images/186.webp"></div>
+<div class="page" id="p187"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 187" src="images/187.webp"></div>
+<div class="page" id="p188"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 188" src="images/188.webp"></div>
+<div class="page" id="p189"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 189" src="images/189.webp"></div>
+<div class="page" id="p190"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 190" src="images/190.webp"></div>
+<div class="page" id="p191"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 191" src="images/191.webp"></div>
+<div class="page" id="p192"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 192" src="images/192.webp"></div>
+<div class="page" id="p193"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 193" src="images/193.webp"></div>
+<div class="page" id="p194"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 194" src="images/194.webp"></div>
+<div class="page" id="p195"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 195" src="images/195.webp"></div>
+<div class="page" id="p196"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 196" src="images/196.webp"></div>
+<div class="page" id="p197"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 197" src="images/197.webp"></div>
+<div class="page" id="p198"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 198" src="images/198.webp"></div>
+<div class="page" id="p199"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 199" src="images/199.webp"></div>
+<div class="page" id="p200"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 200" src="images/200.webp"></div>
+<div class="page" id="p201"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 201" src="images/201.webp"></div>
+<div class="page" id="p202"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 202" src="images/202.webp"></div>
+<div class="page" id="p203"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 203" src="images/203.webp"></div>
+<div class="page" id="p204"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 204" src="images/204.webp"></div>
+<div class="page" id="p205"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 205" src="images/205.webp"></div>
+<div class="page" id="p206"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 206" src="images/206.webp"></div>
+<div class="page" id="p207"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 207" src="images/207.webp"></div>
+<div class="page" id="p208"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 208" src="images/208.webp"></div>
+<div class="page" id="p209"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 209" src="images/209.webp"></div>
+<div class="page" id="p210"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 210" src="images/210.webp"></div>
+<div class="page" id="p211"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 211" src="images/211.webp"></div>
+<div class="page" id="p212"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 212" src="images/212.webp"></div>
+<div class="page" id="p213"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 213" src="images/213.webp"></div>
+<div class="page" id="p214"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 214" src="images/214.webp"></div>
+<div class="page" id="p215"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 215" src="images/215.webp"></div>
+<div class="page" id="p216"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 216" src="images/216.webp"></div>
+<div class="page" id="p217"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 217" src="images/217.webp"></div>
+<div class="page" id="p218"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 218" src="images/218.webp"></div>
+<div class="page" id="p219"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 219" src="images/219.webp"></div>
+<div class="page" id="p220"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 220" src="images/220.webp"></div>
+<div class="page" id="p221"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 221" src="images/221.webp"></div>
+<div class="page" id="p222"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 222" src="images/222.webp"></div>
+<div class="page" id="p223"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 223" src="images/223.webp"></div>
+<div class="page" id="p224"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 224" src="images/224.webp"></div>
+<div class="page" id="p225"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 225" src="images/225.webp"></div>
+<div class="page" id="p226"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 226" src="images/226.webp"></div>
+<div class="page" id="p227"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 227" src="images/227.webp"></div>
+<div class="page" id="p228"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 228" src="images/228.webp"></div>
+<div class="page" id="p229"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 229" src="images/229.webp"></div>
+<div class="page" id="p230"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 230" src="images/230.webp"></div>
+<div class="page" id="p231"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 231" src="images/231.webp"></div>
+<div class="page" id="p232"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 232" src="images/232.webp"></div>
+<div class="page" id="p233"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 233" src="images/233.webp"></div>
+<div class="page" id="p234"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 234" src="images/234.webp"></div>
+<div class="page" id="p235"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 235" src="images/235.webp"></div>
+<div class="page" id="p236"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 236" src="images/236.webp"></div>
+<div class="page" id="p237"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 237" src="images/237.webp"></div>
+<div class="page" id="p238"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 238" src="images/238.webp"></div>
+<div class="page" id="p239"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 239" src="images/239.webp"></div>
+<div class="page" id="p240"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 240" src="images/240.webp"></div>
+<div class="page" id="p241"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 241" src="images/241.webp"></div>
+<div class="page" id="p242"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 242" src="images/242.webp"></div>
+<div class="page" id="p243"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 243" src="images/243.webp"></div>
+<div class="page" id="p244"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 244" src="images/244.webp"></div>
+<div class="page" id="p245"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 245" src="images/245.webp"></div>
+<div class="page" id="p246"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 246" src="images/246.webp"></div>
+<div class="page" id="p247"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 247" src="images/247.webp"></div>
+<div class="page" id="p248"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 248" src="images/248.webp"></div>
+<div class="page" id="p249"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 249" src="images/249.webp"></div>
+<div class="page" id="p250"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 250" src="images/250.webp"></div>
+<div class="page" id="p251"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 251" src="images/251.webp"></div>
+<div class="page" id="p252"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 252" src="images/252.webp"></div>
+<div class="page" id="p253"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 253" src="images/253.webp"></div>
+<div class="page" id="p254"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 254" src="images/254.webp"></div>
+<div class="page" id="p255"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 255" src="images/255.webp"></div>
+<div class="page" id="p256"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 256" src="images/256.webp"></div>
+<div class="page" id="p257"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 257" src="images/257.webp"></div>
+<div class="page" id="p258"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 258" src="images/258.webp"></div>
+<div class="page" id="p259"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 259" src="images/259.webp"></div>
+<div class="page" id="p260"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 260" src="images/260.webp"></div>
+<div class="page" id="p261"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 261" src="images/261.webp"></div>
+<div class="page" id="p262"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 262" src="images/262.webp"></div>
+<div class="page" id="p263"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 263" src="images/263.webp"></div>
+<div class="page" id="p264"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 264" src="images/264.webp"></div>
+<div class="page" id="p265"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 265" src="images/265.webp"></div>
+<div class="page" id="p266"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 266" src="images/266.webp"></div>
+<div class="page" id="p267"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 267" src="images/267.webp"></div>
+<div class="page" id="p268"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 268" src="images/268.webp"></div>
+<div class="page" id="p269"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 269" src="images/269.webp"></div>
+<div class="page" id="p270"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 270" src="images/270.webp"></div>
+<div class="page" id="p271"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 271" src="images/271.webp"></div>
+<div class="page" id="p272"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 272" src="images/272.webp"></div>
+<div class="page" id="p273"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 273" src="images/273.webp"></div>
+<div class="page" id="p274"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 274" src="images/274.webp"></div>
+<div class="page" id="p275"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 275" src="images/275.webp"></div>
+<div class="page" id="p276"><img loading="lazy" decoding="async" width="1275" height="1636" alt="Geography page 276" src="images/276.webp"></div>
+<div class="page" id="p277"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 277" src="images/277.webp"></div>
+<div class="page" id="p278"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 278" src="images/278.webp"></div>
+<div class="page" id="p279"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 279" src="images/279.webp"></div>
+<div class="page" id="p280"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 280" src="images/280.webp"></div>
+<div class="page" id="p281"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 281" src="images/281.webp"></div>
+<div class="page" id="p282"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 282" src="images/282.webp"></div>
+<div class="page" id="p283"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 283" src="images/283.webp"></div>
+<div class="page" id="p284"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 284" src="images/284.webp"></div>
+<div class="page" id="p285"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 285" src="images/285.webp"></div>
+<div class="page" id="p286"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 286" src="images/286.webp"></div>
+<div class="page" id="p287"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 287" src="images/287.webp"></div>
+<div class="page" id="p288"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 288" src="images/288.webp"></div>
+<div class="page" id="p289"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 289" src="images/289.webp"></div>
+<div class="page" id="p290"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 290" src="images/290.webp"></div>
+<div class="page" id="p291"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 291" src="images/291.webp"></div>
+<div class="page" id="p292"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 292" src="images/292.webp"></div>
+<div class="page" id="p293"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 293" src="images/293.webp"></div>
+<div class="page" id="p294"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 294" src="images/294.webp"></div>
+<div class="page" id="p295"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 295" src="images/295.webp"></div>
+<div class="page" id="p296"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 296" src="images/296.webp"></div>
+<div class="page" id="p297"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 297" src="images/297.webp"></div>
+<div class="page" id="p298"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 298" src="images/298.webp"></div>
+<div class="page" id="p299"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 299" src="images/299.webp"></div>
+<div class="page" id="p300"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 300" src="images/300.webp"></div>
+<div class="page" id="p301"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 301" src="images/301.webp"></div>
+<div class="page" id="p302"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 302" src="images/302.webp"></div>
+<div class="page" id="p303"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 303" src="images/303.webp"></div>
+<div class="page" id="p304"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 304" src="images/304.webp"></div>
+<div class="page" id="p305"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 305" src="images/305.webp"></div>
+<div class="page" id="p306"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 306" src="images/306.webp"></div>
+<div class="page" id="p307"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 307" src="images/307.webp"></div>
+<div class="page" id="p308"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 308" src="images/308.webp"></div>
+<div class="page" id="p309"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 309" src="images/309.webp"></div>
+<div class="page" id="p310"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 310" src="images/310.webp"></div>
+<div class="page" id="p311"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 311" src="images/311.webp"></div>
+<div class="page" id="p312"><img loading="lazy" decoding="async" width="1275" height="1650" alt="Geography page 312" src="images/312.webp"></div>
+</body>
+</html>

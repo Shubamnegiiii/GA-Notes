@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>History</title>
+<style>
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:#e9e9ec; font-family:system-ui,sans-serif; color:#1f2937; }
+  nav { position:sticky; top:0; z-index:10; display:flex; justify-content:center; flex-wrap:wrap; gap:8px; padding:8px; background:#1f2937; }
+  nav a { color:#fff; text-decoration:none; font-size:14px; padding:6px 14px; border-radius:999px; background:#374151; }
+  nav a:hover { background:#4b5563; }
+  .front { max-width:1000px; margin:0 auto; padding:28px 14px 8px; scroll-margin-top:56px; }
+  .front h1 { margin:0; text-align:center; font-size:38px; color:#9b1c1c; letter-spacing:.5px; }
+  .front .sub { text-align:center; margin:6px 0 22px; color:#4b5563; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+  .card { background:#fff; border-radius:12px; padding:16px 18px; box-shadow:0 2px 10px rgba(0,0,0,.15); border-top:5px solid #9b1c1c; }
+  .card h2 { margin:0 0 4px; font-size:20px; }
+  .card h2 a { text-decoration:none; }
+  .tot { font-size:14px; color:#4b5563; margin-bottom:10px; }
+  .card ol { list-style:none; margin:0; padding:0; }
+  .card li a { display:flex; align-items:center; gap:10px; padding:7px 4px; border-bottom:1px solid #eee; color:#1f2937; text-decoration:none; font-size:15px; }
+  .card li a:hover { background:#f3f4f6; }
+  .card .n { flex:0 0 24px; height:24px; border-radius:50%; color:#fff; font-size:12px; display:flex; align-items:center; justify-content:center; }
+  .card .t { flex:1; }
+  .card .pg { font-size:12px; color:#6b7280; }
+  .sec { max-width:900px; margin:20px auto 0; padding:0 8px; font-size:22px; scroll-margin-top:56px; }
+  .page { max-width:900px; margin:16px auto; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,.2); scroll-margin-top:50px; }
+  .page img { display:block; width:100%; height:auto; }
+  @media (max-width:920px) { .page { margin:8px 0; } }
+  @media print { nav { display:none; } body { background:#fff; } .front { page-break-after:always; } .sec { display:none; } .page { margin:0; box-shadow:none; page-break-after:always; } }
+</style>
+</head>
+<body>
+<nav><a href="#contents">Contents</a><a href="#ancient">Ancient</a><a href="#medieval">Medieval</a><a href="#modern">Modern</a></nav>
+<section id="contents" class="front"><h1>History</h1><p class="sub">Ancient &middot; Medieval &middot; Modern &mdash; 29 lectures in total</p><div class="cards"><div class="card" style="border-top-color:#9b1c1c"><h2><a href="#ancient" style="color:#9b1c1c">Ancient History</a></h2><div class="tot">Total lectures: <b>12</b> &middot; 95 pages</div><ol><li><a href="#ancient-p1"><span class="n" style="background:#9b1c1c">1</span><span class="t">Stone Age</span><span class="pg">p. 1</span></a></li><li><a href="#ancient-p10"><span class="n" style="background:#9b1c1c">2</span><span class="t">Indus Valley Civilisation</span><span class="pg">p. 10</span></a></li><li><a href="#ancient-p19"><span class="n" style="background:#9b1c1c">3</span><span class="t">Vedic Age</span><span class="pg">p. 19</span></a></li><li><a href="#ancient-p26"><span class="n" style="background:#9b1c1c">4</span><span class="t">Jainism and Buddhism</span><span class="pg">p. 26</span></a></li><li><a href="#ancient-p34"><span class="n" style="background:#9b1c1c">5</span><span class="t">Mahajanapada and Magadha</span><span class="pg">p. 34</span></a></li><li><a href="#ancient-p39"><span class="n" style="background:#9b1c1c">6</span><span class="t">Mauryan Empire</span><span class="pg">p. 39</span></a></li><li><a href="#ancient-p49"><span class="n" style="background:#9b1c1c">7</span><span class="t">Post Mauryan Empires</span><span class="pg">p. 49</span></a></li><li><a href="#ancient-p56"><span class="n" style="background:#9b1c1c">8</span><span class="t">Sangam Age</span><span class="pg">p. 56</span></a></li><li><a href="#ancient-p61"><span class="n" style="background:#9b1c1c">9</span><span class="t">Gupta Empire</span><span class="pg">p. 61</span></a></li><li><a href="#ancient-p67"><span class="n" style="background:#9b1c1c">10</span><span class="t">Post Gupta-1</span><span class="pg">p. 67</span></a></li><li><a href="#ancient-p77"><span class="n" style="background:#9b1c1c">11</span><span class="t">Post Gupta-2</span><span class="pg">p. 77</span></a></li><li><a href="#ancient-p83"><span class="n" style="background:#9b1c1c">12</span><span class="t">Cholas &amp; Tripartite Struggle</span><span class="pg">p. 83</span></a></li></ol></div><div class="card" style="border-top-color:#9b1c1c"><h2><a href="#medieval" style="color:#9b1c1c">Medieval History</a></h2><div class="tot">Total lectures: <b>8</b> &middot; 76 pages</div><ol><li><a href="#medieval-p1"><span class="n" style="background:#9b1c1c">1</span><span class="t">Invasion of Islam</span><span class="pg">p. 1</span></a></li><li><a href="#medieval-p7"><span class="n" style="background:#9b1c1c">2</span><span class="t">Delhi Sultanate -1</span><span class="pg">p. 7</span></a></li><li><a href="#medieval-p16"><span class="n" style="background:#9b1c1c">3</span><span class="t">Delhi Sultanate (Part - 2)</span><span class="pg">p. 16</span></a></li><li><a href="#medieval-p22"><span class="n" style="background:#9b1c1c">4</span><span class="t">Vijaynagar Empire &amp; Bahmani Kingdom</span><span class="pg">p. 22</span></a></li><li><a href="#medieval-p35"><span class="n" style="background:#9b1c1c">5</span><span class="t">Mughal Empire (Part - 1)</span><span class="pg">p. 35</span></a></li><li><a href="#medieval-p42"><span class="n" style="background:#9b1c1c">6</span><span class="t">Mughal Empire (Part - 2)</span><span class="pg">p. 42</span></a></li><li><a href="#medieval-p52"><span class="n" style="background:#9b1c1c">7</span><span class="t">Aurangzeb and later Mughals</span><span class="pg">p. 52</span></a></li><li><a href="#medieval-p60"><span class="n" style="background:#9b1c1c">8</span><span class="t">Marathas</span><span class="pg">p. 60</span></a></li></ol></div><div class="card" style="border-top-color:#9b1c1c"><h2><a href="#modern" style="color:#9b1c1c">Modern History</a></h2><div class="tot">Total lectures: <b>9</b> &middot; 91 pages</div><ol><li><a href="#modern-p1"><span class="n" style="background:#9b1c1c">1</span><span class="t">Advent of Europeans</span><span class="pg">p. 1</span></a></li><li><a href="#modern-p15"><span class="n" style="background:#9b1c1c">2</span><span class="t">Socio religious reform movement</span><span class="pg">p. 15</span></a></li><li><a href="#modern-p27"><span class="n" style="background:#9b1c1c">3</span><span class="t">Revolt of 1857</span><span class="pg">p. 27</span></a></li><li><a href="#modern-p39"><span class="n" style="background:#9b1c1c">4</span><span class="t">Indian National Congress</span><span class="pg">p. 39</span></a></li><li><a href="#modern-p47"><span class="n" style="background:#9b1c1c">5</span><span class="t">Partition of Bengal</span><span class="pg">p. 47</span></a></li><li><a href="#modern-p57"><span class="n" style="background:#9b1c1c">6</span><span class="t">Gandhian Era</span><span class="pg">p. 57</span></a></li><li><a href="#modern-p65"><span class="n" style="background:#9b1c1c">7</span><span class="t">Bhagat Singh &amp; Revolutionary Activities</span><span class="pg">p. 65</span></a></li><li><a href="#modern-p72"><span class="n" style="background:#9b1c1c">8</span><span class="t">Civil Disobedience Movement</span><span class="pg">p. 72</span></a></li><li><a href="#modern-p81"><span class="n" style="background:#9b1c1c">9</span><span class="t">Quit India movement</span><span class="pg">p. 81</span></a></li></ol></div></div></section>
+<section id="ancient"><h2 class="sec">Ancient History</h2>
+<div class="page" id="ancient-p1"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 1" src="images/ancient/001.webp"></div>
+<div class="page" id="ancient-p2"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 2" src="images/ancient/002.webp"></div>
+<div class="page" id="ancient-p3"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 3" src="images/ancient/003.webp"></div>
+<div class="page" id="ancient-p4"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 4" src="images/ancient/004.webp"></div>
+<div class="page" id="ancient-p5"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 5" src="images/ancient/005.webp"></div>
+<div class="page" id="ancient-p6"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 6" src="images/ancient/006.webp"></div>
+<div class="page" id="ancient-p7"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 7" src="images/ancient/007.webp"></div>
+<div class="page" id="ancient-p8"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 8" src="images/ancient/008.webp"></div>
+<div class="page" id="ancient-p9"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 9" src="images/ancient/009.webp"></div>
+<div class="page" id="ancient-p10"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 10" src="images/ancient/010.webp"></div>
+<div class="page" id="ancient-p11"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 11" src="images/ancient/011.webp"></div>
+<div class="page" id="ancient-p12"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 12" src="images/ancient/012.webp"></div>
+<div class="page" id="ancient-p13"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 13" src="images/ancient/013.webp"></div>
+<div class="page" id="ancient-p14"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 14" src="images/ancient/014.webp"></div>
+<div class="page" id="ancient-p15"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 15" src="images/ancient/015.webp"></div>
+<div class="page" id="ancient-p16"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 16" src="images/ancient/016.webp"></div>
+<div class="page" id="ancient-p17"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 17" src="images/ancient/017.webp"></div>
+<div class="page" id="ancient-p18"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 18" src="images/ancient/018.webp"></div>
+<div class="page" id="ancient-p19"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 19" src="images/ancient/019.webp"></div>
+<div class="page" id="ancient-p20"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 20" src="images/ancient/020.webp"></div>
+<div class="page" id="ancient-p21"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 21" src="images/ancient/021.webp"></div>
+<div class="page" id="ancient-p22"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 22" src="images/ancient/022.webp"></div>
+<div class="page" id="ancient-p23"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 23" src="images/ancient/023.webp"></div>
+<div class="page" id="ancient-p24"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 24" src="images/ancient/024.webp"></div>
+<div class="page" id="ancient-p25"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 25" src="images/ancient/025.webp"></div>
+<div class="page" id="ancient-p26"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 26" src="images/ancient/026.webp"></div>
+<div class="page" id="ancient-p27"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 27" src="images/ancient/027.webp"></div>
+<div class="page" id="ancient-p28"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 28" src="images/ancient/028.webp"></div>
+<div class="page" id="ancient-p29"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 29" src="images/ancient/029.webp"></div>
+<div class="page" id="ancient-p30"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 30" src="images/ancient/030.webp"></div>
+<div class="page" id="ancient-p31"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 31" src="images/ancient/031.webp"></div>
+<div class="page" id="ancient-p32"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 32" src="images/ancient/032.webp"></div>
+<div class="page" id="ancient-p33"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 33" src="images/ancient/033.webp"></div>
+<div class="page" id="ancient-p34"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 34" src="images/ancient/034.webp"></div>
+<div class="page" id="ancient-p35"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 35" src="images/ancient/035.webp"></div>
+<div class="page" id="ancient-p36"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 36" src="images/ancient/036.webp"></div>
+<div class="page" id="ancient-p37"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 37" src="images/ancient/037.webp"></div>
+<div class="page" id="ancient-p38"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 38" src="images/ancient/038.webp"></div>
+<div class="page" id="ancient-p39"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 39" src="images/ancient/039.webp"></div>
+<div class="page" id="ancient-p40"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 40" src="images/ancient/040.webp"></div>
+<div class="page" id="ancient-p41"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 41" src="images/ancient/041.webp"></div>
+<div class="page" id="ancient-p42"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 42" src="images/ancient/042.webp"></div>
+<div class="page" id="ancient-p43"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 43" src="images/ancient/043.webp"></div>
+<div class="page" id="ancient-p44"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 44" src="images/ancient/044.webp"></div>
+<div class="page" id="ancient-p45"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 45" src="images/ancient/045.webp"></div>
+<div class="page" id="ancient-p46"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 46" src="images/ancient/046.webp"></div>
+<div class="page" id="ancient-p47"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 47" src="images/ancient/047.webp"></div>
+<div class="page" id="ancient-p48"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 48" src="images/ancient/048.webp"></div>
+<div class="page" id="ancient-p49"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 49" src="images/ancient/049.webp"></div>
+<div class="page" id="ancient-p50"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 50" src="images/ancient/050.webp"></div>
+<div class="page" id="ancient-p51"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 51" src="images/ancient/051.webp"></div>
+<div class="page" id="ancient-p52"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 52" src="images/ancient/052.webp"></div>
+<div class="page" id="ancient-p53"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 53" src="images/ancient/053.webp"></div>
+<div class="page" id="ancient-p54"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 54" src="images/ancient/054.webp"></div>
+<div class="page" id="ancient-p55"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 55" src="images/ancient/055.webp"></div>
+<div class="page" id="ancient-p56"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 56" src="images/ancient/056.webp"></div>
+<div class="page" id="ancient-p57"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 57" src="images/ancient/057.webp"></div>
+<div class="page" id="ancient-p58"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 58" src="images/ancient/058.webp"></div>
+<div class="page" id="ancient-p59"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 59" src="images/ancient/059.webp"></div>
+<div class="page" id="ancient-p60"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 60" src="images/ancient/060.webp"></div>
+<div class="page" id="ancient-p61"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 61" src="images/ancient/061.webp"></div>
+<div class="page" id="ancient-p62"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 62" src="images/ancient/062.webp"></div>
+<div class="page" id="ancient-p63"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 63" src="images/ancient/063.webp"></div>
+<div class="page" id="ancient-p64"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 64" src="images/ancient/064.webp"></div>
+<div class="page" id="ancient-p65"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 65" src="images/ancient/065.webp"></div>
+<div class="page" id="ancient-p66"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 66" src="images/ancient/066.webp"></div>
+<div class="page" id="ancient-p67"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 67" src="images/ancient/067.webp"></div>
+<div class="page" id="ancient-p68"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 68" src="images/ancient/068.webp"></div>
+<div class="page" id="ancient-p69"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 69" src="images/ancient/069.webp"></div>
+<div class="page" id="ancient-p70"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 70" src="images/ancient/070.webp"></div>
+<div class="page" id="ancient-p71"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 71" src="images/ancient/071.webp"></div>
+<div class="page" id="ancient-p72"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 72" src="images/ancient/072.webp"></div>
+<div class="page" id="ancient-p73"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 73" src="images/ancient/073.webp"></div>
+<div class="page" id="ancient-p74"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 74" src="images/ancient/074.webp"></div>
+<div class="page" id="ancient-p75"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 75" src="images/ancient/075.webp"></div>
+<div class="page" id="ancient-p76"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 76" src="images/ancient/076.webp"></div>
+<div class="page" id="ancient-p77"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 77" src="images/ancient/077.webp"></div>
+<div class="page" id="ancient-p78"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 78" src="images/ancient/078.webp"></div>
+<div class="page" id="ancient-p79"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 79" src="images/ancient/079.webp"></div>
+<div class="page" id="ancient-p80"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 80" src="images/ancient/080.webp"></div>
+<div class="page" id="ancient-p81"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 81" src="images/ancient/081.webp"></div>
+<div class="page" id="ancient-p82"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 82" src="images/ancient/082.webp"></div>
+<div class="page" id="ancient-p83"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 83" src="images/ancient/083.webp"></div>
+<div class="page" id="ancient-p84"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 84" src="images/ancient/084.webp"></div>
+<div class="page" id="ancient-p85"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 85" src="images/ancient/085.webp"></div>
+<div class="page" id="ancient-p86"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 86" src="images/ancient/086.webp"></div>
+<div class="page" id="ancient-p87"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 87" src="images/ancient/087.webp"></div>
+<div class="page" id="ancient-p88"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 88" src="images/ancient/088.webp"></div>
+<div class="page" id="ancient-p89"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 89" src="images/ancient/089.webp"></div>
+<div class="page" id="ancient-p90"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 90" src="images/ancient/090.webp"></div>
+<div class="page" id="ancient-p91"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 91" src="images/ancient/091.webp"></div>
+<div class="page" id="ancient-p92"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 92" src="images/ancient/092.webp"></div>
+<div class="page" id="ancient-p93"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 93" src="images/ancient/093.webp"></div>
+<div class="page" id="ancient-p94"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 94" src="images/ancient/094.webp"></div>
+<div class="page" id="ancient-p95"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Ancient History page 95" src="images/ancient/095.webp"></div>
+</section>
+<section id="medieval"><h2 class="sec">Medieval History</h2>
+<div class="page" id="medieval-p1"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 1" src="images/medieval/001.webp"></div>
+<div class="page" id="medieval-p2"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 2" src="images/medieval/002.webp"></div>
+<div class="page" id="medieval-p3"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 3" src="images/medieval/003.webp"></div>
+<div class="page" id="medieval-p4"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 4" src="images/medieval/004.webp"></div>
+<div class="page" id="medieval-p5"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 5" src="images/medieval/005.webp"></div>
+<div class="page" id="medieval-p6"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 6" src="images/medieval/006.webp"></div>
+<div class="page" id="medieval-p7"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 7" src="images/medieval/007.webp"></div>
+<div class="page" id="medieval-p8"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 8" src="images/medieval/008.webp"></div>
+<div class="page" id="medieval-p9"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 9" src="images/medieval/009.webp"></div>
+<div class="page" id="medieval-p10"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 10" src="images/medieval/010.webp"></div>
+<div class="page" id="medieval-p11"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 11" src="images/medieval/011.webp"></div>
+<div class="page" id="medieval-p12"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 12" src="images/medieval/012.webp"></div>
+<div class="page" id="medieval-p13"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 13" src="images/medieval/013.webp"></div>
+<div class="page" id="medieval-p14"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 14" src="images/medieval/014.webp"></div>
+<div class="page" id="medieval-p15"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 15" src="images/medieval/015.webp"></div>
+<div class="page" id="medieval-p16"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 16" src="images/medieval/016.webp"></div>
+<div class="page" id="medieval-p17"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 17" src="images/medieval/017.webp"></div>
+<div class="page" id="medieval-p18"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 18" src="images/medieval/018.webp"></div>
+<div class="page" id="medieval-p19"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 19" src="images/medieval/019.webp"></div>
+<div class="page" id="medieval-p20"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 20" src="images/medieval/020.webp"></div>
+<div class="page" id="medieval-p21"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 21" src="images/medieval/021.webp"></div>
+<div class="page" id="medieval-p22"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 22" src="images/medieval/022.webp"></div>
+<div class="page" id="medieval-p23"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 23" src="images/medieval/023.webp"></div>
+<div class="page" id="medieval-p24"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 24" src="images/medieval/024.webp"></div>
+<div class="page" id="medieval-p25"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 25" src="images/medieval/025.webp"></div>
+<div class="page" id="medieval-p26"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 26" src="images/medieval/026.webp"></div>
+<div class="page" id="medieval-p27"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 27" src="images/medieval/027.webp"></div>
+<div class="page" id="medieval-p28"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 28" src="images/medieval/028.webp"></div>
+<div class="page" id="medieval-p29"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 29" src="images/medieval/029.webp"></div>
+<div class="page" id="medieval-p30"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 30" src="images/medieval/030.webp"></div>
+<div class="page" id="medieval-p31"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 31" src="images/medieval/031.webp"></div>
+<div class="page" id="medieval-p32"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 32" src="images/medieval/032.webp"></div>
+<div class="page" id="medieval-p33"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 33" src="images/medieval/033.webp"></div>
+<div class="page" id="medieval-p34"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 34" src="images/medieval/034.webp"></div>
+<div class="page" id="medieval-p35"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 35" src="images/medieval/035.webp"></div>
+<div class="page" id="medieval-p36"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 36" src="images/medieval/036.webp"></div>
+<div class="page" id="medieval-p37"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 37" src="images/medieval/037.webp"></div>
+<div class="page" id="medieval-p38"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 38" src="images/medieval/038.webp"></div>
+<div class="page" id="medieval-p39"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 39" src="images/medieval/039.webp"></div>
+<div class="page" id="medieval-p40"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 40" src="images/medieval/040.webp"></div>
+<div class="page" id="medieval-p41"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 41" src="images/medieval/041.webp"></div>
+<div class="page" id="medieval-p42"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 42" src="images/medieval/042.webp"></div>
+<div class="page" id="medieval-p43"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 43" src="images/medieval/043.webp"></div>
+<div class="page" id="medieval-p44"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 44" src="images/medieval/044.webp"></div>
+<div class="page" id="medieval-p45"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 45" src="images/medieval/045.webp"></div>
+<div class="page" id="medieval-p46"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 46" src="images/medieval/046.webp"></div>
+<div class="page" id="medieval-p47"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 47" src="images/medieval/047.webp"></div>
+<div class="page" id="medieval-p48"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 48" src="images/medieval/048.webp"></div>
+<div class="page" id="medieval-p49"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 49" src="images/medieval/049.webp"></div>
+<div class="page" id="medieval-p50"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 50" src="images/medieval/050.webp"></div>
+<div class="page" id="medieval-p51"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 51" src="images/medieval/051.webp"></div>
+<div class="page" id="medieval-p52"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 52" src="images/medieval/052.webp"></div>
+<div class="page" id="medieval-p53"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 53" src="images/medieval/053.webp"></div>
+<div class="page" id="medieval-p54"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 54" src="images/medieval/054.webp"></div>
+<div class="page" id="medieval-p55"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 55" src="images/medieval/055.webp"></div>
+<div class="page" id="medieval-p56"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 56" src="images/medieval/056.webp"></div>
+<div class="page" id="medieval-p57"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 57" src="images/medieval/057.webp"></div>
+<div class="page" id="medieval-p58"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 58" src="images/medieval/058.webp"></div>
+<div class="page" id="medieval-p59"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 59" src="images/medieval/059.webp"></div>
+<div class="page" id="medieval-p60"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 60" src="images/medieval/060.webp"></div>
+<div class="page" id="medieval-p61"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 61" src="images/medieval/061.webp"></div>
+<div class="page" id="medieval-p62"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 62" src="images/medieval/062.webp"></div>
+<div class="page" id="medieval-p63"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 63" src="images/medieval/063.webp"></div>
+<div class="page" id="medieval-p64"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 64" src="images/medieval/064.webp"></div>
+<div class="page" id="medieval-p65"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 65" src="images/medieval/065.webp"></div>
+<div class="page" id="medieval-p66"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 66" src="images/medieval/066.webp"></div>
+<div class="page" id="medieval-p67"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Medieval History page 67" src="images/medieval/067.webp"></div>
+<div class="page" id="medieval-p68"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 68" src="images/medieval/068.webp"></div>
+<div class="page" id="medieval-p69"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 69" src="images/medieval/069.webp"></div>
+<div class="page" id="medieval-p70"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 70" src="images/medieval/070.webp"></div>
+<div class="page" id="medieval-p71"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 71" src="images/medieval/071.webp"></div>
+<div class="page" id="medieval-p72"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 72" src="images/medieval/072.webp"></div>
+<div class="page" id="medieval-p73"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 73" src="images/medieval/073.webp"></div>
+<div class="page" id="medieval-p74"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 74" src="images/medieval/074.webp"></div>
+<div class="page" id="medieval-p75"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 75" src="images/medieval/075.webp"></div>
+<div class="page" id="medieval-p76"><img loading="lazy" decoding="async" width="1241" height="1754" alt="Medieval History page 76" src="images/medieval/076.webp"></div>
+</section>
+<section id="modern"><h2 class="sec">Modern History</h2>
+<div class="page" id="modern-p1"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 1" src="images/modern/001.webp"></div>
+<div class="page" id="modern-p2"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 2" src="images/modern/002.webp"></div>
+<div class="page" id="modern-p3"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 3" src="images/modern/003.webp"></div>
+<div class="page" id="modern-p4"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 4" src="images/modern/004.webp"></div>
+<div class="page" id="modern-p5"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 5" src="images/modern/005.webp"></div>
+<div class="page" id="modern-p6"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 6" src="images/modern/006.webp"></div>
+<div class="page" id="modern-p7"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 7" src="images/modern/007.webp"></div>
+<div class="page" id="modern-p8"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 8" src="images/modern/008.webp"></div>
+<div class="page" id="modern-p9"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 9" src="images/modern/009.webp"></div>
+<div class="page" id="modern-p10"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 10" src="images/modern/010.webp"></div>
+<div class="page" id="modern-p11"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 11" src="images/modern/011.webp"></div>
+<div class="page" id="modern-p12"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 12" src="images/modern/012.webp"></div>
+<div class="page" id="modern-p13"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 13" src="images/modern/013.webp"></div>
+<div class="page" id="modern-p14"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 14" src="images/modern/014.webp"></div>
+<div class="page" id="modern-p15"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 15" src="images/modern/015.webp"></div>
+<div class="page" id="modern-p16"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 16" src="images/modern/016.webp"></div>
+<div class="page" id="modern-p17"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 17" src="images/modern/017.webp"></div>
+<div class="page" id="modern-p18"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 18" src="images/modern/018.webp"></div>
+<div class="page" id="modern-p19"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 19" src="images/modern/019.webp"></div>
+<div class="page" id="modern-p20"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 20" src="images/modern/020.webp"></div>
+<div class="page" id="modern-p21"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 21" src="images/modern/021.webp"></div>
+<div class="page" id="modern-p22"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 22" src="images/modern/022.webp"></div>
+<div class="page" id="modern-p23"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 23" src="images/modern/023.webp"></div>
+<div class="page" id="modern-p24"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 24" src="images/modern/024.webp"></div>
+<div class="page" id="modern-p25"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 25" src="images/modern/025.webp"></div>
+<div class="page" id="modern-p26"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 26" src="images/modern/026.webp"></div>
+<div class="page" id="modern-p27"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 27" src="images/modern/027.webp"></div>
+<div class="page" id="modern-p28"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 28" src="images/modern/028.webp"></div>
+<div class="page" id="modern-p29"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 29" src="images/modern/029.webp"></div>
+<div class="page" id="modern-p30"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 30" src="images/modern/030.webp"></div>
+<div class="page" id="modern-p31"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 31" src="images/modern/031.webp"></div>
+<div class="page" id="modern-p32"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 32" src="images/modern/032.webp"></div>
+<div class="page" id="modern-p33"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 33" src="images/modern/033.webp"></div>
+<div class="page" id="modern-p34"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 34" src="images/modern/034.webp"></div>
+<div class="page" id="modern-p35"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 35" src="images/modern/035.webp"></div>
+<div class="page" id="modern-p36"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 36" src="images/modern/036.webp"></div>
+<div class="page" id="modern-p37"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 37" src="images/modern/037.webp"></div>
+<div class="page" id="modern-p38"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 38" src="images/modern/038.webp"></div>
+<div class="page" id="modern-p39"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 39" src="images/modern/039.webp"></div>
+<div class="page" id="modern-p40"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 40" src="images/modern/040.webp"></div>
+<div class="page" id="modern-p41"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 41" src="images/modern/041.webp"></div>
+<div class="page" id="modern-p42"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 42" src="images/modern/042.webp"></div>
+<div class="page" id="modern-p43"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 43" src="images/modern/043.webp"></div>
+<div class="page" id="modern-p44"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 44" src="images/modern/044.webp"></div>
+<div class="page" id="modern-p45"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 45" src="images/modern/045.webp"></div>
+<div class="page" id="modern-p46"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 46" src="images/modern/046.webp"></div>
+<div class="page" id="modern-p47"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 47" src="images/modern/047.webp"></div>
+<div class="page" id="modern-p48"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 48" src="images/modern/048.webp"></div>
+<div class="page" id="modern-p49"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 49" src="images/modern/049.webp"></div>
+<div class="page" id="modern-p50"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 50" src="images/modern/050.webp"></div>
+<div class="page" id="modern-p51"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 51" src="images/modern/051.webp"></div>
+<div class="page" id="modern-p52"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 52" src="images/modern/052.webp"></div>
+<div class="page" id="modern-p53"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 53" src="images/modern/053.webp"></div>
+<div class="page" id="modern-p54"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 54" src="images/modern/054.webp"></div>
+<div class="page" id="modern-p55"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 55" src="images/modern/055.webp"></div>
+<div class="page" id="modern-p56"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 56" src="images/modern/056.webp"></div>
+<div class="page" id="modern-p57"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 57" src="images/modern/057.webp"></div>
+<div class="page" id="modern-p58"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 58" src="images/modern/058.webp"></div>
+<div class="page" id="modern-p59"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 59" src="images/modern/059.webp"></div>
+<div class="page" id="modern-p60"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 60" src="images/modern/060.webp"></div>
+<div class="page" id="modern-p61"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 61" src="images/modern/061.webp"></div>
+<div class="page" id="modern-p62"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 62" src="images/modern/062.webp"></div>
+<div class="page" id="modern-p63"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 63" src="images/modern/063.webp"></div>
+<div class="page" id="modern-p64"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 64" src="images/modern/064.webp"></div>
+<div class="page" id="modern-p65"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 65" src="images/modern/065.webp"></div>
+<div class="page" id="modern-p66"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 66" src="images/modern/066.webp"></div>
+<div class="page" id="modern-p67"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 67" src="images/modern/067.webp"></div>
+<div class="page" id="modern-p68"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 68" src="images/modern/068.webp"></div>
+<div class="page" id="modern-p69"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 69" src="images/modern/069.webp"></div>
+<div class="page" id="modern-p70"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 70" src="images/modern/070.webp"></div>
+<div class="page" id="modern-p71"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 71" src="images/modern/071.webp"></div>
+<div class="page" id="modern-p72"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 72" src="images/modern/072.webp"></div>
+<div class="page" id="modern-p73"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 73" src="images/modern/073.webp"></div>
+<div class="page" id="modern-p74"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 74" src="images/modern/074.webp"></div>
+<div class="page" id="modern-p75"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 75" src="images/modern/075.webp"></div>
+<div class="page" id="modern-p76"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 76" src="images/modern/076.webp"></div>
+<div class="page" id="modern-p77"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 77" src="images/modern/077.webp"></div>
+<div class="page" id="modern-p78"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 78" src="images/modern/078.webp"></div>
+<div class="page" id="modern-p79"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 79" src="images/modern/079.webp"></div>
+<div class="page" id="modern-p80"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 80" src="images/modern/080.webp"></div>
+<div class="page" id="modern-p81"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 81" src="images/modern/081.webp"></div>
+<div class="page" id="modern-p82"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 82" src="images/modern/082.webp"></div>
+<div class="page" id="modern-p83"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 83" src="images/modern/083.webp"></div>
+<div class="page" id="modern-p84"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 84" src="images/modern/084.webp"></div>
+<div class="page" id="modern-p85"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 85" src="images/modern/085.webp"></div>
+<div class="page" id="modern-p86"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 86" src="images/modern/086.webp"></div>
+<div class="page" id="modern-p87"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 87" src="images/modern/087.webp"></div>
+<div class="page" id="modern-p88"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 88" src="images/modern/088.webp"></div>
+<div class="page" id="modern-p89"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 89" src="images/modern/089.webp"></div>
+<div class="page" id="modern-p90"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 90" src="images/modern/090.webp"></div>
+<div class="page" id="modern-p91"><img loading="lazy" decoding="async" width="1241" height="1755" alt="Modern History page 91" src="images/modern/091.webp"></div>
+</section>
+</body>
+</html>
